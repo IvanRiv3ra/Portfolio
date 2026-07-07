@@ -167,7 +167,7 @@ body {
   color: #cf9307;
 }
 
-.projects {
+.project {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -177,7 +177,7 @@ body {
   border-bottom: solid 1px var(--border-color);
 }
 
-.projects__text{
+.project__text{
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -200,14 +200,14 @@ body {
   line-height: 1.5;
 }
 
-.project__in-production {
+.project__status {
   background-color: var(--accent-dim);
   border-radius: 3px;
   padding: 3px 7px;
   border: 1px solid rgba(63, 185, 80, 0.35);
 }
 
-.features {
+.project__features {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -240,7 +240,7 @@ body {
   color: var(--accent-color);
 }
 
-.preview{
+.project__preview{
   width: 80%;
   height: 80%;
   align-self: center;
