@@ -14,8 +14,21 @@
   --bckgnd--dim: #14171c;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bckgnd-clr);
+}
+
+section {
+  scroll-margin-top: 60px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .text-green {

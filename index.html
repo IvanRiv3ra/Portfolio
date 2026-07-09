@@ -22,9 +22,15 @@
         </div>
 
         <ul>
-          <li class="nav__items"><span>./</span>proyectos</li>
-          <li class="nav__items"><span>./</span>sobre mí</li>
-          <li class="nav__items"><span>./</span>contacto</li>
+          <li class="nav__items">
+            <a href="#projects"><span>./</span>proyectos</a>
+          </li>
+          <li class="nav__items">
+            <a href=""><span>./</span>sobre mí</a>
+          </li>
+          <li class="nav__items">
+            <a href="#contact"><span>./</span>contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -71,7 +77,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="projects">
         <article class="project">
           <div class="project__text">
             <div class="project__version sm-text monospace">
@@ -211,7 +217,7 @@
         </article>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footer__text">
         <p class="text-sec monospace sm-text">
           $ git log --oneline -1 → "listo para el siguiente proyecto"
