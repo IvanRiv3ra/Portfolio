@@ -186,6 +186,14 @@ body {
   border-bottom: solid 1px var(--border-color);
 }
 
+.project:nth-child(even) .project__text{
+  order: 2;
+}
+
+.project:nth-child(even) .project__preview{
+  order: 1;
+}
+
 .project__text {
   display: flex;
   flex-direction: column;
