@@ -14,7 +14,7 @@
   --bckgnd--dim: #14171c;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -26,7 +26,7 @@ section {
   scroll-margin-top: 60px;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -89,7 +89,7 @@ a{
 }
 
 .nav ul span {
-  color: #4A4F57;
+  color: #4a4f57;
 }
 
 .nav__name {
@@ -106,12 +106,12 @@ a{
   box-shadow: 0 0 10px 0 var(--accent-color);
 }
 
-.nav__items{
+.nav__items {
   cursor: pointer;
-  transition: color .1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 
-.nav__items:hover{
+.nav__items:hover {
   color: var(--main-text);
 }
 
@@ -199,11 +199,11 @@ a{
   border-bottom: solid 1px var(--border-color);
 }
 
-.project:nth-child(even) .project__text{
+.project:nth-child(even) .project__text {
   order: 2;
 }
 
-.project:nth-child(even) .project__preview{
+.project:nth-child(even) .project__preview {
   order: 1;
 }
 
@@ -281,17 +281,63 @@ a{
   color: var(--sec-text);
 }
 
+#about-me{
+  margin: 60px auto 0;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-me__header{
+  display: flex;
+}
+
+.about-me__selfie{
+  width: 400px;
+  height: 500px;
+  background-color: var(--bckgnd--dim);
+}
+
+.about-me__subtitle{
+  font-style: italic;
+  font-family: "Fraunces", serif;
+  color: var(--sec-text);
+}
+
+.about-me__title {
+  font-family: "Fraunces", serif;
+  color: var(--main-text);
+  font-weight: 400;
+}
+
+.credentials li{
+  list-style: none;
+}
+
+.stacks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stack > p {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--main-text);
+  width: fit-content;
+  background-color: var(--bckgnd--dim);
+  border: 1px solid var(--border-color);
+}
+
 .footer {
   max-width: 80%;
   margin: auto;
   padding: 60px 0;
 }
 
-.footer__text{
+.footer__text {
   padding-left: 50px;
 }
 
-.footer__description{
+.footer__description {
   max-width: 16ch;
   font-weight: 500;
   font-size: clamp(2rem, 5vw, 3.4rem);
@@ -299,22 +345,22 @@ a{
   padding-top: 20px;
 }
 
-.contact__links{
+.contact__links {
   display: flex;
   padding: 40px 0 60px 0;
   gap: 15px;
 }
 
-.contact__link{
+.contact__link {
   display: flex;
   border: 1px solid var(--border-color);
   padding: 12px 18px;
   border-radius: 5px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.contact__link:hover{
+.contact__link:hover {
   background-color: var(--accent-dim);
   border: 1px solid var(--accent-color);
 }
@@ -323,7 +369,7 @@ a{
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--border-color);
-  color: #4A4F57;
+  color: #4a4f57;
   padding-top: 20px;
 }
 
