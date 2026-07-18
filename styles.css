@@ -281,24 +281,24 @@ a {
   color: var(--sec-text);
 }
 
-#about-me{
+#about-me {
   margin: 60px auto 0;
   max-width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.about-me__header{
+.about-me__header {
   display: flex;
 }
 
-.about-me__selfie{
+.about-me__selfie {
   width: 400px;
   height: 500px;
   background-color: var(--bckgnd--dim);
 }
 
-.about-me__subtitle{
+.about-me__subtitle {
   font-style: italic;
   font-family: "Fraunces", serif;
   color: var(--sec-text);
@@ -310,11 +310,28 @@ a {
   font-weight: 400;
 }
 
-.credentials li{
-  list-style: none;
+.credentials {
+  background-color: var(--bckgnd--dim);
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
 }
 
-.stacks{
+.credentials li {
+  list-style: none;
+  padding: 8px 0;
+}
+
+.credentials li:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-me__desc {
+  max-width: 56ch;
+  line-height: 1.5;
+}
+
+.stacks {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
