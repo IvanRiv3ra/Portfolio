@@ -289,7 +289,11 @@ a {
 }
 
 .about-me__header {
+  margin: 60px auto 0;
+  max-width: 80%;
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .about-me__selfie {
@@ -298,10 +302,21 @@ a {
   background-color: var(--bckgnd--dim);
 }
 
+.about-me__whoami {
+  color: var(--accent-color);
+  background-color: var(--accent-dim);
+  border: 1px solid rgba(63, 185, 80, 0.35);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
 .about-me__subtitle {
   font-style: italic;
   font-family: "Fraunces", serif;
   color: var(--sec-text);
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  padding-bottom: 5px;
 }
 
 .about-me__title {
@@ -334,14 +349,27 @@ a {
 .stacks {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-family: "IBM Plex Mono", monospace;
 }
 
-.stack > p {
-  font-family: "IBM Plex Mono", monospace;
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack__title {
+  color: var(--sec-text);
+  font-size: clamp(0.5rem, 0.9vw, 1.3rem);
+}
+
+.stack p {
   color: var(--main-text);
   width: fit-content;
   background-color: var(--bckgnd--dim);
   border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 6px 11px;
 }
 
 .footer {
