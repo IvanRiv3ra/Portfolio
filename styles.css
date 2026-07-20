@@ -26,6 +26,10 @@ section {
   scroll-margin-top: 60px;
 }
 
+#about-me__scroll{
+  scroll-margin-top: 100px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -322,7 +326,14 @@ a {
 .about-me__title {
   font-family: "Fraunces", serif;
   color: var(--main-text);
-  font-weight: 400;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+}
+
+.about-me__right{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .credentials {
@@ -356,11 +367,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  padding: 15px 0 25px 0;
 }
 
 .stack__title {
   color: var(--sec-text);
+  width: 90%;
+  padding-right: 50px;
   font-size: clamp(0.5rem, 0.9vw, 1.3rem);
+  padding-bottom: 10px;
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .stack p {
