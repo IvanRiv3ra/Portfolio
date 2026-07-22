@@ -151,19 +151,20 @@ a {
 .hero__text h2 {
   font-family: "Fraunces", serif;
   font-weight: 400;
-  font-size: clamp(2.4rem, 6.4vw, 5rem);
+  font-size: clamp(2.4rem, 5.5vw, 5rem);
   line-height: 1;
   max-width: 14ch;
 }
 
 .hero__description {
   font-family: "Inter", sans-serif;
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
   max-width: 52ch;
   line-height: 1.6;
 }
 
 .editor {
+  margin: auto;
   counter-reset: line;
   width: fit-content;
   border-radius: 5px;
@@ -281,7 +282,7 @@ a {
   color: var(--sec-text);
 }
 
-#about-me{
+#about-me {
   margin: 60px auto 0;
   max-width: 80%;
   padding: 0 60px 40px 60px;
@@ -332,16 +333,16 @@ a {
   font-size: clamp(1.4rem, 2.6vw, 2rem);
 }
 
-.about-me__left{
+.about-me__left {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-self: flex-start;
-  position:sticky;
-  top:100px;
+  position: sticky;
+  top: 100px;
 }
 
-.about-me__right{
+.about-me__right {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -420,6 +421,10 @@ a {
   padding-top: 20px;
 }
 
+.dot--animation {
+  animation: cursor 1s infinite ease-in-out;
+}
+
 .contact__links {
   display: flex;
   padding: 40px 0 60px 0;
@@ -458,3 +463,13 @@ a {
     opacity: 1;
   }
 }
+/* 
+@media (min-width: 1400px) {
+  .hero__text h2 {
+    font-size: clamp(2.4rem, 6.4vw, 4rem);
+  }
+
+  .hero__description {
+    font-size: clamp(1rem, 1.6vw, 1rem);
+  }
+} */
