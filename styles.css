@@ -251,7 +251,7 @@ a {
 
 .project__stack {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 /* .project__stack p {
@@ -273,13 +273,19 @@ a {
   color: var(--accent-color);
 } */
 
+.project__stack--item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .project__button{
   color: var(--main-text);
   padding: 10px;
   background-color: var(--bckgnd--dim);
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -291,6 +297,7 @@ a {
 
 .test{
   width: 35px;
+  height: 35px;
 }
 
 .project__preview {
