@@ -1,0 +1,73 @@
+export function projectCard(project) {
+  return `
+    <article class="project">
+          <div class="project__text">
+            <div class="project__version sm-text monospace">
+              <p class="text-green">${project.version}</p>
+              <span class="text-sec">⋅</span>
+              <p class="text-sec">${project.date}</p>
+              <p class="project__status text-green">EN PRODUCCIÓN</p>
+            </div>
+
+            <div class="project__desc">
+              <h2 class="project__title text-main fraunces">${project.title}</h2>
+              <p class="inter text-sec">
+                ${project.description}
+              </p>
+            </div>
+
+            <div class="monospace text-main sm-text">
+              <ul class="project__features">
+              ${project.features
+                .map(
+                  (item, index) => `
+                <li>
+                  <span class="text-green">
+                  ${String(index + 1).padStart(2, "0")}⋅
+                  </span>
+                  ${item}
+                </li>
+              `,
+                )
+                .join("")}
+              </ul>
+            </div>
+            <p class="text-sec monospace sm-text">Tecnologías utilizadas</p>
+            <div class="project__stack monospace text-main sm-text">
+              ${project.stack
+                .map(
+                  (item) => `
+              <div class="project__stack--item">
+                <svg class="project__stack--icon">
+                  <use href="/assets/sprite.svg#icon-${item.icon}"></use>
+                </svg>
+                <p>${item.name}</p>
+              </div>
+              `,
+                )
+                .join("")}
+            </div>
+
+            <div class="project__buttons">
+              <button class="project__button">
+                <svg class="project__button--icon">
+                  <use href="/assets/sprite.svg#icon-share"></use></svg
+                >${project.title == "Este portafolio" ? "Lo estás viendo" : "Ver proyecto"}
+              </button>
+              <button class="project__button">
+                <svg class="project__button--icon">
+                  <use href="/assets/sprite.svg#icon-doc"></use></svg
+                >Ver detalles
+              </button>
+              <button class="project__button">
+                <svg class="project__button--icon">
+                  <use href="/assets/sprite.svg#icon-github"></use>
+                </svg>
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="project__preview"></div>
+        </article>
+    `;
+}
