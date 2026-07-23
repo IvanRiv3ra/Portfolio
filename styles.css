@@ -254,14 +254,14 @@ a {
   gap: 10px;
 }
 
-.project__stack p {
+/* .project__stack p {
   background-color: var(--bckgnd--dim);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 5px 10px;
-}
+} */
 
-.project__test {
+/* .project__test {
   cursor: pointer;
   width: fit-content;
   transition: color 0.2s ease-in-out;
@@ -271,6 +271,26 @@ a {
 
 .project__test:hover {
   color: var(--accent-color);
+} */
+
+.project__button{
+  color: var(--main-text);
+  padding: 10px;
+  background-color: var(--bckgnd--dim);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: "IBM Plex Mono", monospace;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.project__button:hover {
+  background-color: var(--accent-dim);
+  border: 1px solid var(--accent-color);
+}
+
+.test{
+  width: 35px;
 }
 
 .project__preview {
