@@ -49,22 +49,22 @@ export function projectCard(project) {
             </div>
 
             <div class="project__buttons">
-              <button class="project__button">
+              <a class="project__button">
                 <svg class="project__button--icon">
                   <use href="/assets/sprite.svg#icon-share"></use></svg
                 >${project.title == "Este portafolio" ? "Lo estás viendo" : "Ver proyecto"}
-              </button>
-              <button class="project__button">
+              </a>
+              <a class="project__button">
                 <svg class="project__button--icon">
                   <use href="/assets/sprite.svg#icon-doc"></use></svg
                 >Ver detalles
-              </button>
-              <button class="project__button">
+              </a>
+              <a href=${project.github} target="_blank" class="project__button">
                 <svg class="project__button--icon">
                   <use href="/assets/sprite.svg#icon-github"></use>
                 </svg>
                 GitHub
-              </button>
+              </a>
             </div>
           </div>
           <div class="project__preview"></div>

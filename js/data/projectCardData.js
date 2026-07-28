@@ -16,6 +16,7 @@ export const projectCardData = [
       { name: "git", icon: "git" },
       { name: "jwt", icon: "jwt" },
     ],
+    github: "https://github.com/IvanRiv3ra/ZentregoAPI"
   },
   {
     version: "v2.0.0",
@@ -34,13 +35,14 @@ export const projectCardData = [
       { name: "git", icon: "git" },
       { name: "jwt", icon: "jwt" },
     ],
+    github: "https://github.com/IvanRiv3ra/BootStack"
   },
   {
     version: "v3.0.0",
     date: "2026",
     title: "Este portafolio",
     description:
-      "Sí, este sitio también es un proyecto. Construido a mano, sin plantillas, para probar que el detalle importa incluso en cómo me presento.",
+    "Sí, este sitio también es un proyecto. Construido a mano, sin plantillas, para probar que el detalle importa incluso en cómo me presento.",
     features: [
       "Diseño y desarrollo 100% propios",
       "Animaciones con respeto a reduce-motion",
@@ -52,5 +54,6 @@ export const projectCardData = [
       { name: "git", icon: "git" },
       { name: "vanilla js", icon: "jwt" },
     ],
+    github: "https://github.com/IvanRiv3ra/Portfolio"
   },
 ];
