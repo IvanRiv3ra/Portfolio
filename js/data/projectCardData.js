@@ -13,8 +13,8 @@ export const projectCardData = [
     stack: [
       { name: ".net", icon: "net" },
       { name: "sql server", icon: "sqlserver" },
-      { name: "git", icon: "git" },
       { name: "jwt", icon: "jwt" },
+      { name: "git", icon: "git" },
     ],
     github: "https://github.com/IvanRiv3ra/ZentregoAPI"
   },
@@ -30,10 +30,9 @@ export const projectCardData = [
       "Tiempo de carga reducido de 4s a 900ms",
     ],
     stack: [
-      { name: ".net", icon: "net" },
-      { name: "sql server", icon: "sqlserver" },
+      { name: "react", icon: "net" },
+      { name: "express js", icon: "sqlserver" },
       { name: "git", icon: "git" },
-      { name: "jwt", icon: "jwt" },
     ],
     github: "https://github.com/IvanRiv3ra/BootStack"
   },
@@ -51,8 +50,8 @@ export const projectCardData = [
     stack: [
       { name: "html", icon: "net" },
       { name: "css3", icon: "sqlserver" },
-      { name: "git", icon: "git" },
       { name: "vanilla js", icon: "jwt" },
+      { name: "git", icon: "git" },
     ],
     github: "https://github.com/IvanRiv3ra/Portfolio"
   },

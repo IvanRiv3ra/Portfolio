@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bckgnd-clr: #0b0d10;
+  --main-text: #ece9e2;
+  --sec-text: #7c838c;
+  --border-color: #23272e;
+  --accent-color: #3fb950;
+  --accent-dim: #1f3d26;
+  --bckgnd--dim: #14171c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bckgnd-clr);
+}
