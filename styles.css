@@ -475,15 +475,10 @@ a {
 }
 
 .project__details {
-  margin: 120px auto;
+  margin: 120px auto 0;
   max-width: 80%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-}
-
-.project__details--left {
-  grid-column: 1/3;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project__details--desc {
@@ -551,12 +546,9 @@ a {
 
 .project__details--info {
   width: 70%;
-  height: fit-content;
-  padding: 30px;
-  justify-self: end;
+  margin-left: auto;
   border: 1px solid var(--border-color);
   border-radius: 5px;
-  grid-column: 3/5;
 }
 
 .project__details--item {
@@ -590,14 +582,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.project__details--img {
-  width: 80%;
-}
-
-.project__details--img img {
-  width: 100%;
 }
 
 @keyframes cursor {
