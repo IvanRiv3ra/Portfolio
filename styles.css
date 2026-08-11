@@ -547,6 +547,7 @@ a {
 .project__details--info {
   width: 70%;
   margin-left: auto;
+  padding: 30px;
   border: 1px solid var(--border-color);
   border-radius: 5px;
 }
@@ -582,6 +583,14 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.project__details--img {
+  width: 80%;
+  margin: 60px auto auto auto;
+}
+.project__details--img img{
+  width: 100%;
 }
 
 @keyframes cursor {
