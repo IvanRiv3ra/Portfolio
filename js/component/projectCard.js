@@ -1,3 +1,5 @@
+const url = `details.html?project=`;
+
 export function projectCard(project) {
   return `
     <article class="project">
@@ -54,7 +56,7 @@ export function projectCard(project) {
                   <use href="/assets/sprite.svg#icon-share"></use></svg
                 >${project.title == "Este portafolio" ? "Lo estás viendo" : "Ver proyecto"}
               </a>
-              <a class="project__button">
+              <a href=${url+project.slug} class="project__button">
                 <svg class="project__button--icon">
                   <use href="/assets/sprite.svg#icon-doc"></use></svg
                 >Ver detalles
