@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bckgnd-clr: #0b0d10;
+  --main-text: #ece9e2;
+  --sec-text: #7c838c;
+  --border-color: #23272e;
+  --accent-color: #3fb950;
+  --accent-dim: #1f3d26;
+  --bckgnd--dim: #14171c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bckgnd-clr);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-green {
+  color: var(--accent-color);
+}
+
+.text-main {
+  color: var(--main-text);
+}
+
+.text-sec {
+  color: var(--sec-text);
+}
+
+.sm-text {
+  font-size: clamp(0.5rem, 0.9vw, 1.3rem);
+}
+
+.monospace {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.project__version {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project__button--icon {
+  width: 16px;
+  height: 16px;
+}

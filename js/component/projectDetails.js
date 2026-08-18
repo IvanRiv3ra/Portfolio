@@ -22,7 +22,7 @@ export function projectDetails(project) {
               <svg class="project__button--icon">
                 <use href="/assets/sprite.svg#icon-share"></use>
               </svg>
-              ver sitio en vivo
+              ${project.slug == "portfolio"?"lo estás viendo":"ver sitio en vivo"}
             </a>
             <a
               class="project-detail__button button--transparent text-main"
@@ -139,7 +139,7 @@ export function projectDetails(project) {
       </div>
     </section>
     <footer class="project-detail__footer">
-      <p class="monospace sm-text">© 2026 Tu Nombre</p>
-      <p class="monospace sm-text">v1.0.0 — Proyecto Uno</p>
+      <p class="monospace sm-text">© 2026 Iván Rivera</p>
+      <p class="monospace sm-text">${project.version} — ${project.title}</p>
     </footer> `;
 }
