@@ -1,4 +1,3 @@
-
 section {
   scroll-margin-top: 60px;
 }
@@ -9,7 +8,7 @@ section {
   top: 0;
   width: 100%;
   padding: 1.4rem clamp(1rem, 5vw, 4.8rem);
-  font-size: 0.6rem;
+  font-size: clamp(0.1rem, 0.6rem, 1.2rem);
   border-bottom: solid 1px var(--border-color);
   position: fixed;
   background-color: var(--bckgnd-clr);
@@ -98,7 +97,7 @@ section {
 
 .hero__description {
   font-family: "Inter", sans-serif;
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.4vw, 1.2rem);
   max-width: 52ch;
   line-height: 1.6;
 }
@@ -113,6 +112,7 @@ section {
   line-height: 0.6;
   white-space: pre-wrap;
   user-select: none;
+  font-size: clamp(0.7rem, 1.2vw, 1.2rem);
 }
 
 .editor div {
@@ -206,6 +206,7 @@ section {
   font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-size: clamp(0.7rem, 1.4vw, 1.2rem);
 }
 
 .project__button:hover {
@@ -220,11 +221,19 @@ section {
 
 .project__preview {
   width: 80%;
-  height: 80%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
   align-self: center;
   background-color: var(--bckgnd--dim);
   border: 1px solid var(--border-color);
   color: var(--sec-text);
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.project__preview img {
+  width: 100%;
 }
 
 #about-me {
@@ -316,6 +325,7 @@ section {
 .about-me__desc {
   max-width: 56ch;
   line-height: 1.5;
+  font-size: clamp(0.7rem, 1.4vw, 1.2rem);
 }
 
 .stacks {
@@ -408,5 +418,75 @@ section {
   50%,
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav div {
+    display: flex;
+    flex-grow: 0;
+  }
+
+  .visible,
+  .name__light {
+    display: none;
+  }
+
+  .hero {
+    max-width: 80%;
+    grid-template-columns: auto;
+    border-bottom: solid 1px var(--border-color);
+    gap: 40px;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project__stack {
+    display: flex;
+    margin: auto;
+    gap: 30px;
+  }
+
+  .project:nth-child(even) .project__text {
+    order: 1;
+  }
+
+  .project:nth-child(even) .project__preview {
+    order: 2;
+  }
+
+  .project__buttons {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+
+  .contact__links {
+    flex-direction: column;
+  }
+  .footer {
+    text-align: center;
+  }
+
+  .footer__text {
+    padding-left: 0px;
+  }
+
+  .auto {
+    margin: auto;
   }
 }

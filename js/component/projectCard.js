@@ -34,29 +34,28 @@ export function projectCard(project) {
                 .join("")}
               </ul>
             </div>
-            <p class="text-sec monospace sm-text">Tecnologías utilizadas</p>
+            <p class="auto text-sec monospace sm-text">Tecnologías utilizadas</p>
             <div class="project__stack monospace text-main sm-text">
-              ${project.stack
-                .map(
-                  (item) => `
-              <div class="project__stack--item">
+            ${project.stack
+              .map(
+                (item) =>
+                  `<div class="project__stack--item">
                 <svg class="project__stack--icon">
                   <use href="/assets/sprite.svg#icon-${item.icon}"></use>
                 </svg>
                 <p>${item.name}</p>
-              </div>
-              `,
-                )
-                .join("")}
+              </div>`,
+              )
+              .join("")}
             </div>
-
+            
             <div class="project__buttons">
               <a class="project__button">
                 <svg class="project__button--icon">
                   <use href="/assets/sprite.svg#icon-share"></use></svg
                 >${project.title == "Este portafolio" ? "Lo estás viendo" : "Ver proyecto"}
               </a>
-              <a href=${url+project.slug} class="project__button">
+              <a href=${url + project.slug} class="project__button">
                 <svg class="project__button--icon">
                   <use href="/assets/sprite.svg#icon-doc"></use></svg
                 >Ver detalles
@@ -69,7 +68,9 @@ export function projectCard(project) {
               </a>
             </div>
           </div>
-          <div class="project__preview"></div>
+          <div class="project__preview">
+            <img src=${project.homeImage}></img>
+          </div>
         </article>
     `;
 }
