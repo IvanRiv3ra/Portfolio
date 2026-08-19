@@ -443,6 +443,10 @@ section {
     gap: 40px;
   }
 
+  .hero__status{
+    justify-content: center;
+  }
+
   .hero__text {
     display: flex;
     flex-direction: column;
