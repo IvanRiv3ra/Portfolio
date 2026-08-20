@@ -286,7 +286,7 @@ section {
   font-family: "Fraunces", serif;
   color: var(--main-text);
   font-weight: 600;
-  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
 }
 
 .about-me__left {
@@ -483,7 +483,7 @@ section {
 
   #about-me {
     margin: 30px auto 0;
-    max-width: 80%;
+    max-width: 100%;
     scroll-margin-top: 100px;
     border-bottom: solid 1px var(--border-color);
   }
@@ -495,16 +495,26 @@ section {
     align-items: center;
   }
 
+  .about-me__selfie {
+    width: 100%;
+  }
+
+  .figure{
+    margin-right: auto;
+  }
+
   .about-me__right {
     align-items: center;
   }
-
-  .about-me__title {
-    text-align: center;
+  
+  .about-me__title{
+    width: 85%;
+    max-width: 100ch;
   }
 
-  .about-me__desc {
-    text-align: center;
+  .about-me__desc{
+    width: 90%;
+    max-width: 100ch;
   }
 
   .about-me__subtitle {
@@ -523,10 +533,6 @@ section {
     gap: 10px;
     justify-content: center;
   }
-/* 
-  .stacks {
-    grid-template-columns: 1fr;
-  } */
 
   .stack-right {
     width: 90%;
@@ -534,8 +540,9 @@ section {
     flex-direction: column;
     justify-self: flex-end;
   }
-  */ .stack__title {
+  .stack__title {
     width: 100%;
+    padding-right: 0;
   }
 
   .contact__links {
