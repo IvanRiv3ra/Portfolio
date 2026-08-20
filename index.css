@@ -456,6 +456,10 @@ section {
     align-items: center;
   }
 
+  .editor {
+    padding: 0 27px;
+  }
+
   .project {
     grid-template-columns: 1fr;
   }
@@ -499,20 +503,20 @@ section {
     width: 100%;
   }
 
-  .figure{
+  .figure {
     margin-right: auto;
   }
 
   .about-me__right {
     align-items: center;
   }
-  
-  .about-me__title{
+
+  .about-me__title {
     width: 85%;
     max-width: 100ch;
   }
 
-  .about-me__desc{
+  .about-me__desc {
     width: 90%;
     max-width: 100ch;
   }
