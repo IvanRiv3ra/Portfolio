@@ -353,10 +353,6 @@ section {
 }
 
 .stack div {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   color: var(--main-text);
   width: fit-content;
   background-color: var(--bckgnd--dim);
@@ -454,6 +450,11 @@ section {
   .contact__links {
     flex-direction: column;
     align-items: center;
+  }
+
+  .project__stack {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

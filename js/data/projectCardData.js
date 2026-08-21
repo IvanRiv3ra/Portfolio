@@ -40,6 +40,7 @@ export const projectCardData = [
       { name: "express js", icon: "express" },
       { name: "git", icon: "git" },
       { name: "shadcn/ui", icon: "shadcn" },
+      { name: "tailwind", icon: "tailwind" },
     ],
     github: "https://github.com/IvanRiv3ra/BootStack",
     homeImage: "../assets/Zentrego.jpg",
