@@ -36,8 +36,8 @@ export const projectCardData = [
       "Tiempo de carga reducido de 4s a 900ms",
     ],
     stack: [
-      { name: "react", icon: "net" },
-      { name: "express js", icon: "sqlserver" },
+      { name: "react", icon: "react" },
+      { name: "express js", icon: "express" },
       { name: "git", icon: "git" },
     ],
     github: "https://github.com/IvanRiv3ra/BootStack",
@@ -59,9 +59,9 @@ export const projectCardData = [
       "Accesible por teclado, responsive real",
     ],
     stack: [
-      { name: "html", icon: "net" },
-      { name: "css3", icon: "sqlserver" },
-      { name: "vanilla js", icon: "jwt" },
+      { name: "html", icon: "html" },
+      { name: "css3", icon: "css" },
+      { name: "vanilla js", icon: "js" },
       { name: "git", icon: "git" },
     ],
     github: "https://github.com/IvanRiv3ra/Portfolio",
