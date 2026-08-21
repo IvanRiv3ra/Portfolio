@@ -480,7 +480,7 @@ section {
   .project__stack {
     display: flex;
     margin: auto;
-    gap: 30px;
+    gap: 20px;
   }
 
   .project:nth-child(even) .project__text {
@@ -527,16 +527,6 @@ section {
 
   .about-me__right {
     align-items: center;
-  }
-
-  .about-me__title {
-    width: 85%;
-    max-width: 100ch;
-  }
-
-  .about-me__desc {
-    width: 90%;
-    max-width: 100ch;
   }
 
   .about-me__subtitle {
