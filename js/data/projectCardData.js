@@ -39,6 +39,7 @@ export const projectCardData = [
       { name: "react", icon: "react" },
       { name: "express js", icon: "express" },
       { name: "git", icon: "git" },
+      { name: "shadcn/ui", icon: "shadcn" },
     ],
     github: "https://github.com/IvanRiv3ra/BootStack",
     homeImage: "../assets/Zentrego.jpg",
