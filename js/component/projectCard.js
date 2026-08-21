@@ -53,7 +53,7 @@ export function projectCard(project) {
               <a class="project__button">
                 <svg class="project__button--icon">
                   <use href="/assets/sprite.svg#icon-share"></use></svg
-                >${project.title == "Este portafolio" ? "Lo estás viendo" : "Ver proyecto"}
+                >${project.title == "Este portafolio" ? "Estás aquí" : "Ver proyecto"}
               </a>
               <a href=${url + project.slug} class="project__button">
                 <svg class="project__button--icon">

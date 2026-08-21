@@ -69,3 +69,10 @@ a {
   width: 16px;
   height: 16px;
 }
+
+@media (max-width: 767px) {
+  .project__button--icon {
+    width: 11px;
+    height: 11px;
+  }
+}

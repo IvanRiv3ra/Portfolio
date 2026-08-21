@@ -421,6 +421,13 @@ section {
   }
 }
 
+@media (max-width: 767px) {
+  .project__stack--icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 @media (max-width: 1023px) {
   .nav {
     justify-content: center;
@@ -476,6 +483,10 @@ section {
 
   .project:nth-child(even) .project__preview {
     order: 2;
+  }
+
+  .project__preview {
+    width: 70%;
   }
 
   .project__buttons {
