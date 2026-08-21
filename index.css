@@ -421,6 +421,12 @@ section {
   }
 }
 
+@media (max-width: 374px) {
+  .project {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 767px) {
   .project__stack--icon {
     width: 25px;
@@ -498,7 +504,8 @@ section {
 
   #about-me {
     margin: 30px auto 0;
-    max-width: 100%;
+    max-width: 80%;
+    padding: 0 0 40px 0;
     scroll-margin-top: 100px;
     border-bottom: solid 1px var(--border-color);
   }

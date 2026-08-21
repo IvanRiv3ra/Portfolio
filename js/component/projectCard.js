@@ -58,7 +58,7 @@ export function projectCard(project) {
               <a href=${url + project.slug} class="project__button">
                 <svg class="project__button--icon">
                   <use href="/assets/sprite.svg#icon-doc"></use></svg
-                >Ver detalles
+                >Detalles
               </a>
               <a href=${project.github} target="_blank" class="project__button">
                 <svg class="project__button--icon">
