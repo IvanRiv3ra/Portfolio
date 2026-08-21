@@ -70,7 +70,17 @@ a {
   height: 16px;
 }
 
+.stack__icon {
+  width: 20px;
+  height: 20px;
+}
+
 @media (max-width: 767px) {
+  .stack__icon {
+    width: 17px;
+    height: 17px;
+  }
+
   .project__button--icon {
     width: 11px;
     height: 11px;

@@ -352,7 +352,11 @@ section {
   border-bottom: 1px solid var(--border-color);
 }
 
-.stack p {
+.stack div {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   color: var(--main-text);
   width: fit-content;
   background-color: var(--bckgnd--dim);
