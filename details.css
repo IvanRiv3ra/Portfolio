@@ -33,9 +33,11 @@
 .project-detail__button {
   display: flex;
   align-self: center;
+  align-items: center;
   gap: 5px;
   font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
+  white-space: nowrap;
   font-size: clamp(0.5rem, 0.9vw, 1.3rem);
   padding: 12px 20px;
   border-radius: 4px;
@@ -99,19 +101,16 @@
 }
 
 .project-detail__icon {
-  width: 80%;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 20px;
   padding-top: 15px;
 }
 
 .project-detail__icon p {
   color: var(--main-text);
-  background-color: var(--bckgnd--dim);
-  border: 1px solid var(--border-color);
   border-radius: 5px;
-  padding: 6px 11px;
+  padding-top: 3px;
 }
 
 .project-detail__main-img {
@@ -257,4 +256,33 @@
   justify-content: space-between;
   padding: 50px 0 30px 0;
   color: #4a4f57;
+}
+
+@media (max-width: 451px) {
+  .project-detail__buttons {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 926px) {
+  .project-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail__hero-right {
+    margin: auto;
+  }
+
+  .project-detail__info {
+    width: fit-content;
+    margin: auto;
+    padding: 30px 50px;
+  }
+
+  .project-detail__buttons {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
 }

@@ -1,9 +1,8 @@
-
 export function projectDetails(project) {
   return `
   <section>
       <div class="project-detail">
-        <div>
+        <div class="project-detail__hero-right">
           <div class="project__version sm-text monospace">
             <p class="text-green">${project.version}</p>
             <span class="text-sec">⋅</span>
@@ -22,7 +21,7 @@ export function projectDetails(project) {
               <svg class="project__button--icon">
                 <use href="/assets/sprite.svg#icon-share"></use>
               </svg>
-              ${project.slug == "portfolio"?"lo estás viendo":"ver sitio en vivo"}
+              ${project.slug == "portfolio" ? "lo estás viendo" : "ver sitio en vivo"}
             </a>
             <a
               class="project-detail__button button--transparent text-main"
@@ -57,12 +56,17 @@ export function projectDetails(project) {
           <div class="project-detail__icons monospace sm-text">
             <p class="text-sec">STACK</p>
             <div class="project-detail__icon">
-              <p>React</p>
-              <p>Tailwind</p>
-              <p>C#</p>
-              <p>.NET</p>
-              <p>SQL Server</p>
-              <p>Git</p>
+              ${project.stack
+                .map(
+                  (item) =>
+                    `<div class="project__stack--item">
+                <svg class="project__stack--icon">
+                  <use href="/assets/sprite.svg#icon-${item.icon}"></use>
+                </svg>
+                <p>${item.name}</p>
+              </div>`,
+                )
+                .join("")}
             </div>
           </div>
         </div>

@@ -215,11 +215,6 @@ section {
   border: 1px solid var(--accent-color);
 }
 
-.project__stack--icon {
-  width: 35px;
-  height: 35px;
-}
-
 .project__preview {
   width: 80%;
   aspect-ratio: 1/1;
@@ -455,13 +450,6 @@ section {
   .project__stack {
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .project__stack--icon {
-    width: 25px;
-    height: 25px;
   }
 }
 
